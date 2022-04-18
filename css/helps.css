@@ -1,0 +1,1251 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    
+}
+:root{
+    --maincolor : #FDBE33;
+    --secondcolor : #20212B;
+    --thirdcolor : #4a4c70;
+    --fourthcolor : #f3f6ff;
+}
+
+html{
+    scroll-behavior: smooth
+}
+/*Start Header*/
+.header{
+    position: relative;
+    margin: 0px 80px;
+}
+
+
+/*Start Small Nav*/
+.contact-nav{
+    height: 45px;
+    background-color: var(--secondcolor) ;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    line-height: 44px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    z-index: 5;
+    position: relative
+}
+.contact-nav .contact-one{
+    height: 100%;
+}
+.contact-nav .contact-one span{
+    padding: 13px 5px ;
+    height: 100%;;
+    border-left:1px solid rgba(255,255,255,.3);
+    color: white
+}
+.contact-nav .contact-one span i{
+    color: var(--maincolor);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.contact-nav .contact-one span:nth-of-type(2){
+    border-right:1px solid rgba(255,255,255,.3);
+}
+
+.contact-nav .contact-two ul{
+    list-style: none;
+}
+
+.contact-nav .contact-two ul li{
+    display: inline-block;
+    padding: 0px 12px;
+    border-left: 1px solid rgba(255,255,255,.3);
+    transition: all .3s
+}
+.contact-nav .contact-two ul li:hover{
+    background-color: var(--maincolor);
+    cursor: pointer
+}
+.contact-nav .contact-two ul li:hover a{
+    color: white;
+
+}
+
+.contact-nav .contact-two ul li:last-of-type{
+    border-right: 1px solid rgba(255,255,255,.3)
+}
+
+.contact-nav .contact-two ul li a{
+    color: var(--maincolor);
+    font-size: 17px;
+}
+
+/*start NavBar*/
+
+.navbar{
+    z-index: 2;
+    background-color: transparent;
+    transition: all .8s
+}
+.navbar .navbar-brand{
+    font-size: 45px;
+    color: var(--secondcolor);
+    font-weight: bold;
+    letter-spacing: 2.5px
+}
+.navbar .navbar-nav li{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.navbar .navbar-nav li a{
+    color: var(--secondcolor);
+    font-weight: 600;
+    transition: all .3s
+}
+.navbar .navbar-nav li a:hover{
+    color: var(--maincolor)
+}
+.dropdown-menu{
+    background-color: var(--secondcolor);
+}
+.navbar .navbar-nav li .dropdown-menu a{
+    color: var(--maincolor)
+}
+.navbar .navbar-nav li .dropdown-menu a:hover{
+    color: var(--secondcolor);
+    background-color: var(--maincolor)
+}
+.navbar.scroll{
+    background-color: var(--secondcolor) !important ;
+    top: 0;
+    left: 0;
+    padding-left:80px; 
+    padding-right:80px; 
+    padding-top:0px; 
+    padding-bottom:0px; 
+    width: 100%;
+    z-index: 1000 
+}
+.navbar.scroll .navbar-nav li .nav-link{
+    color:white
+}
+.navbar.scroll  .navbar-brand{
+    color: var(--maincolor)
+}
+.navbar.scroll .collapse .navbar-nav li.active a,
+.navbar.scroll .collapse .navbar-nav > li a:hover
+
+{
+    color: var(--maincolor)
+}
+.navbar.scroll .navbar-nav li .dropdown-menu a:hover{
+    color: var(--secondcolor);
+    background-color: var(--maincolor)
+}
+.navbar-toggler{
+    background-color: var(--maincolor);
+    color: var(--secondcolor);
+}
+.navbar.scroll .navbar-nav li > a{
+    padding-top: 0;
+    padding-bottom: 0
+}
+navbar.scroll .navbar-nav .dropdown-menu a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+/*Start Carousel*/
+.carousel{
+    height: 84vh;
+    overflow: hidden
+}
+.carousel .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 46%);
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+.carousel-caption{
+    top: 34%
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    font-size: 20;
+    background-color: rgba(255,255,255,1);
+    text-align: center;
+    position: absolute
+}
+.carousel-control-next i,
+.carousel-control-prev i
+{
+    font-size: 20px;
+    color: var(--maincolor);
+
+}
+.carousel-control-next:hover, .carousel-control-prev:hover{
+    background-color: var(--maincolor);
+}
+.carousel-control-next:hover i, .carousel-control-prev:hover i{
+    color: #fff;
+
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon
+{
+    background: none
+}
+.carousel-inner .carousel-item img{
+    position: relative
+}
+.carousel-inner .carousel-item img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3)
+}
+.carousel-caption {
+    top: 15%;
+}
+.carousel-inner .carousel-caption h1{
+    font-size: 60px;
+    font-weight: bold
+}
+.carousel-inner .carousel-caption p{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 1.8
+}
+.buttons{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+}
+.buttons button{
+    border: 1px solid var(--maincolor);
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: all .5s;
+    cursor: pointer;
+    margin: 10px
+}
+.hvr-rectangle-out {
+  background: transparent;
+}
+ .hvr-rectangle-out:before {
+  background: var(--maincolor);
+}
+
+/*start about*/
+.aboutus{
+    padding-top: 30px;
+    margin-bottom: 70px;
+    height: 100vh;
+    position: relative
+}
+.aboutus .aboutimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    height: 100%;
+    background-image: url("../img/about.jpg");
+    background-origin: content-box;
+    background-attachment: fixed ;
+    background-repeat: no-repeat;
+    background-size: contain    
+}
+.aboutus .about-content{
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center
+}
+.aboutus .about-content .contain .head{
+    width: 100%;
+    display: flex;
+}
+.aboutus .about-content .contain .head span{
+    width: 33.333%;
+    font-size: 18px;
+    font-weight: 600;
+    color:var(--thirdcolor);
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .5s
+}
+.aboutus .about-content .contain .head span.now::after,
+.aboutus .about-content .contain .head span:hover::after
+
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 90%;
+    height: 3px;
+    background-color: var(--maincolor);
+}
+.aboutus .about-content .contain .head span.now{
+    color: var(--maincolor)
+}
+.aboutus .about-content h4{
+    color: var(--maincolor);
+    font-weight: 600;
+    margin-bottom: 15px
+}
+.aboutus .about-content h1{
+    color: var(--thirdcolor);
+    font-weight: bold;
+    margin-bottom: 25px
+}
+.aboutus .show-content{
+    margin-top: 15px;
+    line-height: 1.6;
+    color: rgba(0,0,0,.6);
+    font-size: 17px;
+    font-weight: 500
+}
+/*start work*/
+.work{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.work .work-content{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    position: relative;
+    margin-top: 35px;
+}
+.work .content-bound{
+    position: absolute;
+    left: 85px;
+    height: 84%;
+    width: 1px;
+    background-color: #ddd;
+}
+.work .content-bound::after{
+    position: absolute;
+    content: "";
+    top: 25px;
+    margin-left:-.5px;
+    width: 2px;
+    height: 40%;
+    background-color: var(--maincolor)
+}
+.work .small-content{
+    margin-left: 15px
+}
+.work .small-content h5{
+    color: var(--thirdcolor);
+    font-weight: 700
+}
+.work .small-content p{
+    color: rgba(0,0,0,0.5);
+    font-weight: 500;
+    line-height: 1.5
+    
+}
+
+.work .work-content i{
+    margin-right: 15px;
+    color: var(--maincolor);
+}
+
+ [class *= "flat"]:before{
+    font-size: 55px
+}
+
+/*start Statistics*/
+.Statistics{
+    width: 100%;
+    min-height: 400px;
+    margin-top:40px;
+    margin-bottom:50px;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.statsbigcontent{
+    display: flex;
+}
+.flacriconClass [class *= "flat"]{
+    color: var(--maincolor);
+    font-weight: 400;
+    font-size: 55px
+}
+.statsbigcontent .stat-content {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    margin-left: 18px
+}
+.statsbigcontent .stat-content > span{
+    font-size: 45px;
+    font-weight: bold
+}
+.statsbigcontent .stat-content span span span{
+    font-size: 45px;
+    position: relative;
+    top: -15px
+}
+.statsbigcontent .stat-content p{
+    font-size: 22px;
+    font-weight: 600
+}
+
+/*Start Causes*/
+
+.causes{
+    padding-top: 100px;
+}
+.causes .owl-theme .owl-dots, .causes .owl-theme .owl-nav{
+    display: none
+}
+.causes .owl-theme .owl-dots .owl-dot{
+     display: none !important
+}
+
+.causes .causes-content{
+    margin-top: 30px;
+    margin-right: 20px;
+    overflow: hidden;
+    background-color: #f3f6ff
+}
+.causes .causes-content .causes-img{
+    overflow: hidden
+}
+.causes .causes-content .causes-img img{
+    transition: all .5s;
+}
+
+
+.causes .causes-content .content{
+    padding: 30px 22px 10px;
+}
+
+.causes .causes-content .content .range .range-number{
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: var(--maincolor);
+    display: block;
+    font-size: 14px;
+    position: relative;
+    left: 80%;
+    margin-bottom: 5px;
+}
+.causes .causes-content .content .range .range-number::after{
+    position: absolute;
+    content: "";
+    bottom : -4px;
+    left: 15px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--maincolor);
+    transform: rotate(45deg)
+}
+.causes .causes-content .content .range .gray{
+    width: 100%;
+    height: 10px;
+    background-color: darkgray;
+    display: inline-block;
+    position: relative
+}
+
+
+.causes .causes-content .content .range .maincolor{
+    width: 85%;
+    height: 10px;
+    background-color: var(--maincolor);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.causes .causes-content .content .range .Goal,
+.causes .causes-content .content .range .raised
+{
+    font-weight: 600;
+    color: gray
+}
+.causes .causes-content .content .range .Goal{
+    float: right
+}
+.causes .causes-content .causes-sm-cont h3{ 
+    margin-top: 23px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--thirdcolor);
+}
+.causes .causes-content .causes-sm-cont p{
+    line-height: 1.5;
+    letter-spacing: 1.3;
+    font-weight: 400;
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.causes .causes-content .causes-btn{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.causes .causes-content .causes-btn .learn,
+.causes .causes-content .causes-btn .active
+{
+    width: 50%;
+    border: 2px solid var(--maincolor);
+    padding: 10px 20px;
+    font-weight: 400
+}
+.causes .causes-content .causes-btn .learn{
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+    z-index: 1
+}
+.causes .causes-content .causes-btn .learn:hover{
+    background-color: var(--maincolor);
+    color: white
+}
+
+
+.causes .causes-content .causes-btn .active{
+    background-color: var(--maincolor);
+    transition: all .4s
+}
+.causes .causes-content .causes-btn .active:hover{
+    color: white
+}
+.causes-content:hover .causes-img img{
+    transform: scale(1.1);    
+}
+
+/*start Donate*/
+/*start volunteer*/
+
+.donate
+{
+    width: 100%;
+    min-height: 430px;
+    margin-top: 80px;
+    background-color: rgba(0,0,0,.4);
+}
+
+.volunteer{
+    min-height: 500px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    background-color: rgba(0,0,0,.5)
+}
+.donate-content,
+.volunteer-content,
+.donate form
+{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    
+}
+.volunteer form
+{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.volunteer form ::-webkit-input-placeholder
+{
+    color: white
+}
+.donate form ::-webkit-input-placeholder{
+    color: white
+}
+.donate-content,
+.volunteer-content{
+    min-height: 430px
+}
+.volunteer-content{
+    margin-top: 50px
+}
+.donate-content h5,
+.volunteer h5
+{
+    color: var(--maincolor);
+    font-weight: 600;
+    font-size: 22px
+}
+.donate-content h2,
+.volunteer h2
+{
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 30px
+}
+.donate-content p,
+.volunteer-content p
+{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-size: 17px
+}
+.donate form,
+.volunteer form
+{
+    background-color: var(--maincolor);
+    margin-bottom: 0;
+    padding-right: 25px;
+    padding-left: 25px;
+    height: 100%;
+    
+}
+.donate form{
+    padding-top: 77px;
+    padding-bottom: 78px;
+}
+.donate form input,
+.volunteer form input,
+.volunteer form textarea
+{
+    color: #fff !important;
+    background-color: transparent;
+    font-size: 17px;
+    border-radius: none;
+    border-radius: 0px;
+    border: 1px solid #fff;
+    margin-bottom:15px;
+    height: 60px
+}
+.volunteer form textarea{
+    width:100%;
+    padding: 5px 10px;
+    height: 100px
+}
+
+.volunteer form textarea:focus{
+    border: 1px solid white;
+    outline: none
+    
+}
+.donate form input:focus,
+.volunteer form input:focus
+{
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #fff
+}
+.donate form .price,
+.volunteer form .price
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.donate form .price span,
+.volunteer form .price span
+
+{
+    width: 33.333%;
+    padding: 15px 25px;
+    background-color: var(--maincolor);
+    color:white;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+    transition: all .5s;
+    cursor: pointer;
+    text-align: center
+}
+.donate form .price span.dolar,
+.donate form .price span:hover,
+.donate form button.hvr-rectangle-in:hover,
+.volunteer form .price span.dolar,
+.volunteer form .price span:hover,
+.volunteer form button.hvr-rectangle-in:hover
+{
+
+    background-color: white;
+    color:var(--maincolor);
+}
+
+.donate form button,
+.volunteer form button
+{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+    width: 100%;
+    padding: 15px 0px;
+    transition: all .4s
+}
+.donate form button.hvr-rectangle-in::before,
+.volunteer form button.hvr-rectangle-in::before
+{
+    color: white;
+    background-color: var(--maincolor);
+    transition: all .4s
+}
+ 
+.donate form span.hvr-rectangle-in::before,
+.volunteer form span.hvr-rectangle-in::before
+{
+    background-color: var(--maincolor);
+    color: white;
+    border-radius: 0px !important
+}
+.donate form span.hvr-rectangle-in:hover,
+.volunteer form span.hvr-rectangle-in:hover
+{
+    background-color: white;
+    color: var(--maincolor)
+}    
+
+/*start upcoming*/
+.upcoming{
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+.upcoming .box{
+    margin-top: 30px;
+    background-color: var(--fourthcolor)
+}
+.upcoming .upcoming-img img{
+    width: 100%;
+    height: 100%
+}
+.upcoming .box-content{
+    padding: 30px 5px;
+}
+
+.upcoming .box-content .date p{
+    text-align: center;
+    color:#777;
+    padding-bottom: 8px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 8px;
+    line-height: 33px;
+    font-weight: 500
+}
+.upcoming .box-content .date p i{
+    color: var(--thirdcolor);
+    float: left;
+    line-height: 33px;
+    font-weight: bold;
+    font-size: 17px
+}
+
+.upcoming .box-content .date p:not(:last-of-type){
+    border-bottom: 1px solid rgba(0,0,0,.15);   
+}
+.upcoming .box-content .date{
+    position: relative
+}
+.upcoming .box-content .date::after{
+    content: "";
+    position: absolute;
+    right:  10px;
+    top: 0px;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .15)
+}
+.upcoming .box-content .date::before{
+    content: "";
+    position: absolute;
+    right:  9px;
+    top: 68px;
+    width: 3px;
+    height: 24%;
+    background-color: var(--maincolor)
+}
+.box-content .info h3{
+    font-weight: 600;
+    color: var(--thirdcolor)
+}
+.box-content .info p{
+    line-height: 1.5;
+    color: #777;
+    font-weight: 500
+}
+.box-content .info button{
+    background-color: transparent;
+    color: #777;
+    border: 2px solid var(--maincolor);
+    padding: 8px 30px;
+}    
+.box-content .info button.hvr-shutter-in-vertical::before{
+    background-color: var(--fourthcolor);
+    transition: all .5s
+}
+.box-content .info button.hvr-shutter-in-vertical:hover{
+    background-color: var(--maincolor);
+    color: white
+}
+/*start Team*/
+.team{
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+.team .member-info{
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;  
+    margin-bottom: 50px;  
+}
+.team .member-info img{
+    width: 100%;
+    transform:  scale(1);
+    transition: all .4s;
+    margin-bottom: -15px;
+
+}
+.team .member-info:hover img{
+    transform: scale(1.1)
+}
+
+.team .member-info .content{
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    background-color: white;
+    transition: all .4s;
+    overflow: hidden;
+    padding-bottom: 5px
+}
+.team .member-info .content ul{
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 0px
+}
+.team .member-info .content ul li{
+    display: inline-block;
+}
+.team .member-info .content ul li.fa{
+    border: 2px solid var(--maincolor);
+    padding: 5px 10px;
+    margin: 1px;
+    color: var(--thirdcolor);
+    cursor: pointer;
+    transition: all .3s
+}
+.team .member-info .content ul li.fa:hover{
+    background-color: var(--maincolor)
+}
+.team .member-info .content h5{
+    text-align: center;
+    padding-top: 22px;
+    font-weight: 600;
+    color: var(--thirdcolor)
+}
+.team .member-info .content p{
+    text-align: center;
+    padding-bottom:5px;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 0px
+}
+.team .member-info:hover .content{
+    height: 50%
+}
+
+/*start test*/
+.test{
+    padding-top:30px; 
+    padding-bottom:60px; 
+}
+.test .test-boxes{
+    margin-top: 30px
+}
+.test  .test-boxes .test-img{
+    width: 80px;
+    height: 80px;
+    margin-right: 15px
+}
+.test  .test-boxes .test-img img{
+    width: 100%;
+    height: 100%
+}
+.test  .test-boxes .test-box{
+    display: flex;
+    flex-flow: column wrap;
+    width: 320px;
+    padding:  10px;
+}
+
+
+.test .test-boxes .test-info{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    margin-bottom: 10px
+}
+.test .test-boxes .test-info::after{
+    position: absolute;
+    content: "";
+    bottom: 6px;
+    left: 0;
+    background-color: rgba(0,0,0,.15);
+    width: 100%;
+    height: 1px;
+}
+
+.test .test-boxes .test-name{
+    margin-top: 15px
+}
+.test .test-boxes .test-name h5{
+    color:var(--thirdcolor);
+    font-weight: 600
+}
+.test .test-boxes .test-name p{
+    font-style: italic
+}
+.test .test-boxes .test-para p{
+    font-weight: 500;
+    color: #777
+}
+.test .test-boxes .dots{
+    width: 100%;
+    text-align: center
+}
+
+.test .test-boxes .dots span{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: var(--maincolor);
+    margin: 2px;
+    cursor: pointer
+}
+.test .test-boxes .dots span.active-dot{
+    background-color: var(--thirdcolor);
+}
+
+/*start contact*/
+
+.contact{
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.contact .contact-content{
+    position: relative;
+}
+.contact .contact-content .contact-img{
+    width: 100%;
+}
+.contact .contact-content .contact-img img{
+    width: 100%;
+}
+.contact .contact-content form{
+    position: relative;
+    margin-top: -250px;
+    width: 67%;
+    left: 18%;
+    background-color: var(--fourthcolor);
+    padding: 25px
+}
+.contact .contact-content form input,
+.contact .contact-content form textarea
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 6px 12px;
+    border: 1px solid rgba(0,0,0,0.15);
+    background-color: transparent;
+    outline: none
+}
+.contact .contact-content form textarea{
+    height: 150px;
+}
+.contact .contact-content form button{
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--maincolor);
+    color: #777;
+    font-weight: 500
+}
+.contact .contact-content form button.hvr-rectangle-in::before{
+    background: var(--fourthcolor);
+    transition: all .4s
+}
+.contact .contact-content form button.hvr-rectangle-in:hover{
+    background: var(--maincolor);
+    color: white
+}
+
+/*start blog*/
+.blog{
+    margin-top: 20px;
+    
+}
+.blog .blog-content{
+    background-color: var(--fourthcolor);
+    color: var(--thirdcolor);
+    
+}
+.blog-img{
+    width: 100%;
+    margin-top: 30px
+}
+.blog-img img{
+    width: 100%;
+}
+.blog .blog-content .blog-box{
+    padding: 30px
+}
+
+.blog .blog-content .blog-box .blog-info h4{
+    font-weight: bold;
+}
+.blog .blog-content .blog-box .blog-info p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6
+}
+.blog .blog-content .blog-box .icon{
+    padding-top: 15px;
+    border-top: 1px solid rgba(0,0,0,.15);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+    padding-bottom: 10px;
+    font-size: 18px
+}
+.blog .blog-content .blog-box .icon i{
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 8px
+}
+.blog .blog-content .blog-box .icon i:nth-of-type(2){
+    border-left: 1px solid rgba(0,0,0,.15);
+    padding-left: 15px;
+    margin-left: 15px
+}
+.blog .blog-content .blog-box .icon span{
+    padding-right: 5px
+}
+/*start footer*/
+.footer{
+    background-color: var(--secondcolor);
+    padding-top: 100px;
+    color: white;
+    margin-top: 100px
+}
+.footer .box h3{
+    font-weight: 600;
+    color: var(--maincolor);
+    margin-bottom: 30px;
+    text-transform: capitalize
+}
+.footer .box{
+    padding-bottom: 20px
+}
+.footer .box ul{
+    list-style: none
+}
+.footer .box ul li{
+    font-size: 19px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    transition: all .5s
+}
+.footer .box .popular-links ul li:hover,
+.footer .box .useful-links ul li:hover
+{
+    color: var(--maincolor);
+    letter-spacing: 2px;
+    cursor: pointer
+}
+
+.footer .box ul li i{
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 14px
+}
+.footer .box ul li span{
+    font-weight: 500
+}
+.footer .box .our-head-office .info li{
+    margin-bottom: 15px
+}
+.footer .box .our-head-office .social{
+    padding-top: 8px;
+}
+.footer .box .our-head-office .social li{
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid var(--maincolor);
+    color: gray;
+    margin-right: 4px;
+    cursor: pointer; 
+}
+.footer .box .our-head-office .social li.hvr-rectangle-in{
+    background-color: var(--secondcolor);
+}
+
+.footer .box .our-head-office .social li.hvr-rectangle-in::before{
+    background: var(--secondcolor)
+}
+.footer .box .our-head-office .social li.hvr-rectangle-in:hover{
+    background: var(--maincolor);
+    color: white
+}
+
+.footer .box .our-head-office i{
+    font-size: 20px;
+    margin-left: 2px
+}
+.footer .box .our-head-office .social i{    
+    margin-right: 0px ; 
+    margin-left: 0px 
+}
+.footer .box .newsletter input{
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+}
+.footer .box .newsletter button{
+    width: 100%;
+    height: 60px;
+    border: 1px solid var(--maincolor);
+    background-color: transparent;
+    color: #888;
+}
+.footer .box .newsletter span{
+    letter-spacing: 1.5px;
+    color: #888
+}
+.footer .box .newsletter button.hvr-rectangle-in{
+    background-color: var(--secondcolor);
+}
+
+.footer .box .newsletter button.hvr-rectangle-in::before{
+    background: var(--secondcolor)
+}
+.footer .box .newsletter button.hvr-rectangle-in:hover{
+    background: var(--maincolor);
+    color: var(--secondcolor)
+}
+
+.copyright{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-top: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    text-transform: capitalize;
+    font-size: 18px
+}
+.copyright p{
+    color: #777
+}
+.copyright .strong{
+    font-weight: 600;
+    font-size: 19px;
+    transition: all .3s;
+    color: white
+}
+
+.copyright span:hover{
+    color: var(--maincolor);
+    cursor: pointer
+}
+
+
+
+
+
+
+
+
+/*Frame Work*/
+ .hfourpublic{
+    color: var(--maincolor);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+ .htwopublic{
+    color:var(--thirdcolor);
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+
+.goup{
+    position: fixed;
+    display: none;  
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    bottom: 30px;
+    border: none;
+    color: var(--thirdcolor);
+    background-color: var(--maincolor);
+    transition: all .5s;
+    font-size: 20px;
+    animation: animate1 1 1s linear
+}
+@keyframes animate1{
+    0%{
+        opacity: 0;
+        bottom: 0px
+    }
+    100%{
+        opacity: 1;
+        bottom: 30px
+    }
+}
+.goup:hover{
+    color: var(--maincolor);
+    background-color: var(--thirdcolor);
+}
