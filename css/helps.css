@@ -85,12 +85,12 @@ html{
 
 .navbar{
     z-index: 2;
-    background-color: transparent;
+    background-color: var(--secondcolor);
     transition: all .8s
 }
 .navbar .navbar-brand{
     font-size: 45px;
-    color: var(--secondcolor);
+    color: #fff;
     font-weight: bold;
     letter-spacing: 2.5px
 }
@@ -151,7 +151,7 @@ html{
     padding-top: 0;
     padding-bottom: 0
 }
-navbar.scroll .navbar-nav .dropdown-menu a {
+ navbar.scroll .navbar-nav .dropdown-menu a {
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -942,21 +942,9 @@ navbar.scroll .navbar-nav .dropdown-menu a {
     color: #777
 }
 .test .test-boxes .dots{
-    width: 100%;
-    text-align: center
+    display: none;
 }
 
-.test .test-boxes .dots span{
-    width: 12px;
-    height: 12px;
-    display: inline-block;
-    background-color: var(--maincolor);
-    margin: 2px;
-    cursor: pointer
-}
-.test .test-boxes .dots span.active-dot{
-    background-color: var(--thirdcolor);
-}
 
 /*start contact*/
 
